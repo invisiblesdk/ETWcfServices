@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ETWebsite.ViewModel.TravelAgencyVM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AgencyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlanePrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherPrice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.AgencyName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PlanePrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TrainPrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.BusPrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.OtherPrice)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+    </td>
+</tr>
+}
+
+</table>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ea454eff-0cb4-4f51-a003-199e70f5f920" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53945/Location.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Location.xsd" MetadataType="Schema" ID="ffeae21b-c911-46e5-b96c-7ab6e25a68cb" SourceId="1" SourceUrl="http://localhost:53945/Location.svc?xsd=xsd0" />
+    <MetadataFile FileName="Location.disco" MetadataType="Disco" ID="ca020608-d67a-44f6-89a4-71c9c8e88f31" SourceId="1" SourceUrl="http://localhost:53945/Location.svc?disco" />
+    <MetadataFile FileName="Location.wsdl" MetadataType="Wsdl" ID="76407e97-8e89-4c5d-8d5a-b71b1dfebeb5" SourceId="1" SourceUrl="http://localhost:53945/Location.svc?wsdl" />
+    <MetadataFile FileName="Location1.xsd" MetadataType="Schema" ID="9304bff5-f952-47d9-b4fd-be663a4d8825" SourceId="1" SourceUrl="http://localhost:53945/Location.svc?xsd=xsd1" />
+    <MetadataFile FileName="Location2.xsd" MetadataType="Schema" ID="70fd9816-ad37-40f9-aeae-acf5934dddb7" SourceId="1" SourceUrl="http://localhost:53945/Location.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

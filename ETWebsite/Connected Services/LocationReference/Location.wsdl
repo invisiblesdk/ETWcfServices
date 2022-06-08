@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Location" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53945/Location.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53945/Location.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53945/Location.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ETApplicationServices.DTOs" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILocation_GetLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocation" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_GetLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_PostLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostLocation" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_PostLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_PutLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutLocation" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_PutLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_DeleteLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLocation" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_DeleteLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_GetLocationById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationById" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_GetLocationById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_Message_InputMessage">
+    <wsdl:part name="parameters" element="tns:Message" />
+  </wsdl:message>
+  <wsdl:message name="ILocation_Message_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILocation">
+    <wsdl:operation name="GetLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocation/GetLocation" message="tns:ILocation_GetLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocation/GetLocationResponse" message="tns:ILocation_GetLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocation/PostLocation" message="tns:ILocation_PostLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocation/PostLocationResponse" message="tns:ILocation_PostLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocation/PutLocation" message="tns:ILocation_PutLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocation/PutLocationResponse" message="tns:ILocation_PutLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocation/DeleteLocation" message="tns:ILocation_DeleteLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocation/DeleteLocationResponse" message="tns:ILocation_DeleteLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocation/GetLocationById" message="tns:ILocation_GetLocationById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocation/GetLocationByIdResponse" message="tns:ILocation_GetLocationById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Message">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocation/Message" message="tns:ILocation_Message_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocation/MessageResponse" message="tns:ILocation_Message_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILocation" type="tns:ILocation">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetLocation">
+      <soap:operation soapAction="http://tempuri.org/ILocation/GetLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostLocation">
+      <soap:operation soapAction="http://tempuri.org/ILocation/PostLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutLocation">
+      <soap:operation soapAction="http://tempuri.org/ILocation/PutLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLocation">
+      <soap:operation soapAction="http://tempuri.org/ILocation/DeleteLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationById">
+      <soap:operation soapAction="http://tempuri.org/ILocation/GetLocationById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Message">
+      <soap:operation soapAction="http://tempuri.org/ILocation/Message" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Location">
+    <wsdl:port name="BasicHttpBinding_ILocation" binding="tns:BasicHttpBinding_ILocation">
+      <soap:address location="http://localhost:53945/Location.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

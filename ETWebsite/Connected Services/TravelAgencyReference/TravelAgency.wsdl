@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="TravelAgency" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53945/TravelAgency.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53945/TravelAgency.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53945/TravelAgency.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ETApplicationServices.DTOs" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITravelAgency_GetTravelAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTravelAgency" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_GetTravelAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTravelAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_PostTravelAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostTravelAgency" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_PostTravelAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostTravelAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_PutTravelAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutTravelAgency" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_PutTravelAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutTravelAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_DeleteTravelAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTravelAgency" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_DeleteTravelAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTravelAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_GetTravelAgencyById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTravelAgencyById" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_GetTravelAgencyById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTravelAgencyByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_Message_InputMessage">
+    <wsdl:part name="parameters" element="tns:Message" />
+  </wsdl:message>
+  <wsdl:message name="ITravelAgency_Message_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITravelAgency">
+    <wsdl:operation name="GetTravelAgency">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITravelAgency/GetTravelAgency" message="tns:ITravelAgency_GetTravelAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITravelAgency/GetTravelAgencyResponse" message="tns:ITravelAgency_GetTravelAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostTravelAgency">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITravelAgency/PostTravelAgency" message="tns:ITravelAgency_PostTravelAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITravelAgency/PostTravelAgencyResponse" message="tns:ITravelAgency_PostTravelAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutTravelAgency">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITravelAgency/PutTravelAgency" message="tns:ITravelAgency_PutTravelAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITravelAgency/PutTravelAgencyResponse" message="tns:ITravelAgency_PutTravelAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTravelAgency">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITravelAgency/DeleteTravelAgency" message="tns:ITravelAgency_DeleteTravelAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITravelAgency/DeleteTravelAgencyResponse" message="tns:ITravelAgency_DeleteTravelAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelAgencyById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITravelAgency/GetTravelAgencyById" message="tns:ITravelAgency_GetTravelAgencyById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITravelAgency/GetTravelAgencyByIdResponse" message="tns:ITravelAgency_GetTravelAgencyById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Message">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITravelAgency/Message" message="tns:ITravelAgency_Message_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITravelAgency/MessageResponse" message="tns:ITravelAgency_Message_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITravelAgency" type="tns:ITravelAgency">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTravelAgency">
+      <soap:operation soapAction="http://tempuri.org/ITravelAgency/GetTravelAgency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostTravelAgency">
+      <soap:operation soapAction="http://tempuri.org/ITravelAgency/PostTravelAgency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutTravelAgency">
+      <soap:operation soapAction="http://tempuri.org/ITravelAgency/PutTravelAgency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTravelAgency">
+      <soap:operation soapAction="http://tempuri.org/ITravelAgency/DeleteTravelAgency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTravelAgencyById">
+      <soap:operation soapAction="http://tempuri.org/ITravelAgency/GetTravelAgencyById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Message">
+      <soap:operation soapAction="http://tempuri.org/ITravelAgency/Message" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TravelAgency">
+    <wsdl:port name="BasicHttpBinding_ITravelAgency" binding="tns:BasicHttpBinding_ITravelAgency">
+      <soap:address location="http://localhost:53945/TravelAgency.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

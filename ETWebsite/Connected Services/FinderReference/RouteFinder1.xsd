@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53945/RouteFinder.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ETApplicationServices.DTOs" />
+  <xs:element name="FindRoute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ETApplicationServices.DTOs" minOccurs="0" name="location1" nillable="true" type="q1:LocationDto" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ETApplicationServices.DTOs" minOccurs="0" name="location2" nillable="true" type="q2:LocationDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindRouteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ETApplicationServices.DTOs" minOccurs="0" name="FindRouteResult" nillable="true" type="q3:ArrayOfRouteDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

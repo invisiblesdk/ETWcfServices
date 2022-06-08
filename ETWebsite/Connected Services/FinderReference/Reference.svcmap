@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="cc3bf067-5284-4feb-85da-61affaec0495" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53945/RouteFinder.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RouteFinder.xsd" MetadataType="Schema" ID="c72878fd-bada-410a-a4ab-0fa971a313ca" SourceId="1" SourceUrl="http://localhost:53945/RouteFinder.svc?xsd=xsd1" />
+    <MetadataFile FileName="RouteFinder.wsdl" MetadataType="Wsdl" ID="5f3d417e-8b16-4a32-b718-68cea1502e41" SourceId="1" SourceUrl="http://localhost:53945/RouteFinder.svc?wsdl" />
+    <MetadataFile FileName="RouteFinder1.xsd" MetadataType="Schema" ID="1b891773-d196-4738-81ba-d894e1c503d8" SourceId="1" SourceUrl="http://localhost:53945/RouteFinder.svc?xsd=xsd0" />
+    <MetadataFile FileName="RouteFinder.disco" MetadataType="Disco" ID="9e40f3c6-4eab-48f5-b540-fb54dba89a4c" SourceId="1" SourceUrl="http://localhost:53945/RouteFinder.svc?disco" />
+    <MetadataFile FileName="RouteFinder2.xsd" MetadataType="Schema" ID="76113f90-1210-4b90-a478-1129d166138f" SourceId="1" SourceUrl="http://localhost:53945/RouteFinder.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,25 @@
+﻿@model ETWebsite.ViewModel.FinderVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>FinderVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LowestCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LowestCost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="768ae6f3-c569-4850-828f-72a93c7c4215" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53945/TravelAgency.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TravelAgency.xsd" MetadataType="Schema" ID="8059af7d-f578-44ed-81c7-988f899e080b" SourceId="1" SourceUrl="http://localhost:53945/TravelAgency.svc?xsd=xsd2" />
+    <MetadataFile FileName="TravelAgency.wsdl" MetadataType="Wsdl" ID="082cc1a8-e487-42a0-9758-ffe8bda4ad72" SourceId="1" SourceUrl="http://localhost:53945/TravelAgency.svc?wsdl" />
+    <MetadataFile FileName="TravelAgency1.xsd" MetadataType="Schema" ID="d765dd18-9521-41f7-94c7-3142c410f2f8" SourceId="1" SourceUrl="http://localhost:53945/TravelAgency.svc?xsd=xsd0" />
+    <MetadataFile FileName="TravelAgency2.xsd" MetadataType="Schema" ID="fed93b94-1117-4edd-915a-f1ee7232529a" SourceId="1" SourceUrl="http://localhost:53945/TravelAgency.svc?xsd=xsd1" />
+    <MetadataFile FileName="TravelAgency.disco" MetadataType="Disco" ID="2a82d5be-9969-4bae-bf68-d54be29d10a5" SourceId="1" SourceUrl="http://localhost:53945/TravelAgency.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
